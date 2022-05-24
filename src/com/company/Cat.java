@@ -1,12 +1,44 @@
 package com.company;
 
 public class Cat {
-    String type;
-    String habitat;
-    String classes;
-    String color;
-    double weight;
-    int lifeExpectancy;
+    private String type;
+    private String habitat;
+    private String classes;
+    private String color;
+    private double weight;
+    private int lifeExpectancy;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getHabitat() {
+        return habitat;
+    }
+
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
+    }
+
+    public String getClasses() {
+        return classes;
+    }
+
+    public void setClasses(String classes) {
+        this.classes = classes;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 
     public double getWeight() {
         return weight;
@@ -29,7 +61,7 @@ public class Cat {
         System.out.println(classes);
         System.out.println(color);
         System.out.println(weight + " кг");
-        if (lifeExpectancy < 0) {
+        if (lifeExpectancy <= 0) {
             System.out.println("Введите положителное значение возраста");
         } else if (lifeExpectancy > 0) {
             System.out.println(lifeExpectancy + " лет/год");
